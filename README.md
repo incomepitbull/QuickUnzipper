@@ -1,0 +1,4 @@
+QuickUnzipper
+=============
+
+Uploading tons of files can take forever through FTP. I have found when uploading over a few thousand files, that uploading 1 zip file is A LOT faster! This is because the FTP has to upload each file individually, create the directory and switch to it. This adds tons of overhead. The more files, the slower it will be. Even with super fast internet, FTP uploads that have thousands of files and deep directories, just takes too long. I prefer to upload a zip file and use PHP to unzip the file on the server (which only takes a few seconds to unzip). This has proven to be 100x faster for me! This script is locked to its current directory and to zip files only, so it should be pretty secure to use. I still recommend deleting this unzip file once your done though. I hope someone else finds this useful :)
